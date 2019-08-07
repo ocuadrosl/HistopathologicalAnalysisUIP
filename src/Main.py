@@ -4,14 +4,17 @@ Created on Jul 31, 2019
 @author: Oscar Cuadros Linares
 '''
 
-from ROIExtraction import *
+import src.ROIExtraction as roi
 
 if __name__ == '__main__':
   
-    fileName='/home/oscar/data/Dataset 1/B 2009 8854/B 2009 8854 A.vsi'
-    rescaleMicroscopeMagnification(fileName, 5, 10, 10)
+    fileName='/home/oscar/data/biopsy/B526-18  B 20181107/Image01B526-18  B .vsi'
+    roi.rescaleMicroscopeMagnification(fileName, 5)
+    
+    #r = roi.ResizeVSI(fileName,5)
+    #r.process()
     
     
-    
+      
     print("DONE")
     
